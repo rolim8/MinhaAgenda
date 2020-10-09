@@ -65,8 +65,7 @@ public class AgendaService {
         listaContatos.forEach(System.out::println);
     }
     
-    public void Agenda(String nome, String numero){
-        System.out.println("\nNome: "+nome
-                +"\nnumero: "+numero+"\n\n");
+    public void Agenda(String numero){
+        System.out.println("\nnumero: "+numero+"\n\n");
     }
 }
