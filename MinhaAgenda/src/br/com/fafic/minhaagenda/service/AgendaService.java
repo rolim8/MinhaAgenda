@@ -1,12 +1,12 @@
-package br.edu.fafic.engsoft.agenda_telefonica.service;
+package br.com.fafic.minhaagenda.service;
 
 import br.edu.fafic.engsoft.agenda_telefonica.model.ContatoModel;
 import java.util.ArrayList;
 
 public class AgendaService {
-
+    
     ArrayList<ContatoModel> listaContatos = new ArrayList<>();
-
+    
     public boolean addContato(String nome, String numero){
         ContatoModel contatoModel = new ContatoModel(nome, numero);
         try {
@@ -64,5 +64,9 @@ public class AgendaService {
     public void mostrar(){
         listaContatos.forEach(System.out::println);
     }
-
+    
+    public void Agenda(String nome, String numero){
+        System.out.println("\nNome: "+nome
+                +"\nnumero: "+numero+"\n\n");
+    }
 }
